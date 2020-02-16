@@ -1,21 +1,18 @@
 package isogram
 
-import "strings"
+import "unicode"
 
 func IsIsogram(s string) bool {
-	var count = make(map[byte]int)
-	if s == "" {
-		return true
-	}
-	sl := strings.ToLower(s)
-	for i := 0; i < len(sl); i++ {
-		c := sl[i]
-		if c != '-' && c != ' ' {
-			if count[c] == 0 {
-				count[c] = 1
-			} else {
-				return false
-			}
+	var seen = make(map[rune]bool)
+	for _, r := range s {
+		if r == '-' || r == ' ' {
+			continue
+		}
+		rl := unicode.ToLower(r)
+		if seen[rl] {
+			return false
+		} else {
+			seen[rl] = true
 		}
 	}
 	return true
