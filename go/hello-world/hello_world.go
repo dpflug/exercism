@@ -1,4 +1,4 @@
-// Implements a Exercism.io Acronym bob puzzle solution
+// Implements a Exercism.io Hello World puzzle solution
 package greeting
 
 // HelloWorld says "Hello, World!"
