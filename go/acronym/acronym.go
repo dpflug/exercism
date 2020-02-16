@@ -1,4 +1,4 @@
-// Implements a Exercism.io Acronym bob puzzle solution
+// Implements a Exercism.io Acronym puzzle solution
 package acronym
 
 import "strings"

@@ -1,4 +1,4 @@
-// Implements a Exercism.io Acronym bob puzzle solution
+// Implements a Exercism.io Leap puzzle solution
 package leap
 
 // IsLeapYear does what it says on the tin
