@@ -10,7 +10,7 @@ func Hey(remark string) string {
 	switch {
 	case trimark == "":
 		return "Fine. Be that way!"
-	case trimark[len(trimark)-1] == '?':
+	case strings.HasSuffix(trimark, '?'):
 		if strings.ToUpper(remark) == remark && strings.ContainsAny(remark, alphabet) {
 			return "Calm down, I know what I'm doing!"
 		} else {
