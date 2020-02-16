@@ -2,6 +2,7 @@
 *.log
 tmp/
 *.py[cod]
+*.out
 
 # Editor errata
 .#*
