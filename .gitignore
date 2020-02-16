@@ -1,0 +1,11 @@
+.direnv
+*.log
+tmp/
+*.py[cod]
+
+# Editor errata
+.#*
+*.swp
+*.swo
+*~
+\#*\#
