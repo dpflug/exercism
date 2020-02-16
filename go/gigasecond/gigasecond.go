@@ -4,8 +4,8 @@ package gigasecond
 import "time"
 import "log"
 
+// AddGigasecond takes a time and add one BILLION seconds. Mwahaha
 func AddGigasecond(t time.Time) time.Time {
-	// Take a time and add one BILLION seconds. Mwahaha
 	newtime, err := time.ParseDuration("1000000000s")
 	if err == nil {
 		return t.Add(newtime)
