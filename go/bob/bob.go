@@ -1,4 +1,4 @@
-// Implements a Exercism.io Go bob puzzle solution
+// Implements a Exercism.io Go Bob puzzle solution
 package bob
 
 import "strings"
@@ -10,7 +10,7 @@ func Hey(remark string) string {
 	switch {
 	case trimark == "":
 		return "Fine. Be that way!"
-	case strings.HasSuffix(trimark, '?'):
+	case strings.HasSuffix(trimark, "?"):
 		if strings.ToUpper(remark) == remark && strings.ContainsAny(remark, alphabet) {
 			return "Calm down, I know what I'm doing!"
 		} else {
