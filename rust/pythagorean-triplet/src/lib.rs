@@ -12,5 +12,5 @@ pub fn find(sum: u32) -> HashSet<[u32; 3]> {
         }
     }
 
-    return result;
+    result
 }
