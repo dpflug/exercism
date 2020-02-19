@@ -1,4 +1,4 @@
-// Implements a Exercism.io Leap puzzle solution
+// Package leap implements a solution for the Exercism.io Leap puzzle
 package leap
 
 // IsLeapYear does what it says on the tin

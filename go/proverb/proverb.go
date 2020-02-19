@@ -1,4 +1,4 @@
-// Implements a Exercism.io Proverb puzzle solution
+// Package proverb is a solution to the Exercism.io Proverb puzzle
 package proverb
 
 import "fmt"

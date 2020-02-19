@@ -1,8 +1,9 @@
-// Working with Pythagorean triplets
+// Package pythagorean for working with Pythagorean triplets
 package pythagorean
 
 //import "log"
 
+// Triplet is a 3-int representing a Pythagorean triplet
 type Triplet [3]int
 
 // Range finds Pythagorean triplets with side lenghts between 2 bounds

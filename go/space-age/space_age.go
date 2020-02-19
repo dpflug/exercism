@@ -1,6 +1,7 @@
-// Implements an Exercism.io Space Age puzzle solution
+// Package space implements an Exercism.io Space Age puzzle solution
 package space
 
+// Planet is a planet name
 type Planet string
 
 // Age takes a time in seconds and a planet name and

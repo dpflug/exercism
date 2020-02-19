@@ -1,4 +1,4 @@
-// Implements a Exercism.io Acronym puzzle solution
+// Package acronym implements a solution for Exercism.io's Acronym puzzle
 package acronym
 
 import "strings"

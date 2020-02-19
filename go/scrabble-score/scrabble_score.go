@@ -2,6 +2,7 @@ package scrabble
 
 import "strings"
 
+// Score a word like Scrabble's base case
 func Score(s string) int {
 	var score int = 0
 	if s == "" {
@@ -11,7 +12,7 @@ func Score(s string) int {
 	for i := 0; i < len(s); i++ {
 		switch sl[i] {
 		case 'a', 'e', 'i', 'o', 'u', 'l', 'n', 'r', 's', 't':
-			score += 1
+			score++
 		case 'd', 'g':
 			score += 2
 		case 'b', 'c', 'm', 'p':

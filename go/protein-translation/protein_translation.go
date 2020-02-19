@@ -3,10 +3,13 @@ package protein
 import "errors"
 
 var (
+	// ErrStop indicates a STOP codon
 	ErrStop        error = errors.New("STOP codon")
+	// ErrInvalidBase indicates an invalid codon was found
 	ErrInvalidBase error = errors.New("Invalid codon")
 )
 
+// FromCodon returns amino acid names, given a codon string
 func FromCodon(codon string) (string, error) {
 	switch codon {
 	case "AUG":
@@ -30,6 +33,8 @@ func FromCodon(codon string) (string, error) {
 	}
 }
 
+// FromRNA cuts up an RNA string into codons and builds a list of
+// amino acids from them
 func FromRNA(rna string) ([]string, error) {
 	out := make([]string, 0, len(rna)/3)
 	for i := 0; i < len(rna); i += 3 {

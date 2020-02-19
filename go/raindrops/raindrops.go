@@ -5,6 +5,8 @@ import (
 	"strings"
 )
 
+// Convert an int to a "raindrop"
+// Just your basic FizzBuzz, really
 func Convert(i int) string {
 	var out strings.Builder
 	if i%3 == 0 {

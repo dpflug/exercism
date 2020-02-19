@@ -1,4 +1,4 @@
-// Implements a Exercism.io Two-Fer puzzle solution
+// Package twofer implements a Exercism.io Two-Fer puzzle solution
 package twofer
 
 import "strings"

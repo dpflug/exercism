@@ -1,10 +1,15 @@
-// Implements a Exercism.io Triangle puzzle solution
+// Package triangle implements a Exercism.io Triangle puzzle solution
 package triangle
 
 import "math"
 
+// Kind represents kinds of triangles
 type Kind int
 
+// NaT is not a triangle
+// Equ is an equilateral triangle
+// Iso is an isosceles triangle
+// Sca is a scalene triangle
 const (
 	NaT = 0 // not a triangle
 	Equ = 1 // equilateral

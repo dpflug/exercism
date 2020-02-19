@@ -2,6 +2,8 @@ package lsproduct
 
 import "errors"
 
+// LargestSeriesProduct takes a string of digits and a span and finds the
+// largest sum that can be produced by a span-sized slice of digits
 func LargestSeriesProduct(digits string, span int) (int, error) {
 	maxp := 0
 	if span > len(digits) {

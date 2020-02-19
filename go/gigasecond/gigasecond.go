@@ -1,4 +1,4 @@
-// This package implements the Exercism.io Gigasecond puzzle solution
+// Package gigasecond implements a solution to the Exercism.io Gigasecond puzzle
 package gigasecond
 
 import "time"
