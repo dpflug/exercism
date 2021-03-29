@@ -10,7 +10,7 @@ func Detect(subject string, candidates []string) []string {
 	var results = []string{}
 	var sub_chars = make(map[rune]int)
 	for _, char := range subject {
-		sub_chars[unicode.ToLower(char)] += 1
+		sub_chars[unicode.ToLower(char)]++
 	}
 	for _, candidate := range candidates {
 		var cand_chars = make(map[rune]int)
@@ -18,7 +18,7 @@ func Detect(subject string, candidates []string) []string {
 			continue
 		}
 		for _, char := range candidate {
-			cand_chars[unicode.ToLower(char)] += 1
+			cand_chars[unicode.ToLower(char)]++
 		}
 		if reflect.DeepEqual(sub_chars, cand_chars) {
 			results = append(results, candidate)
