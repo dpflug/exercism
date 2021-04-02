@@ -12,3 +12,4 @@ tmp/
 \#*\#
 
 .ccls-cache
+zig-cache
