@@ -4,7 +4,7 @@ import "strings"
 
 // Score a word like Scrabble's base case
 func Score(s string) int {
-	var score int = 0
+	var score int
 	if s == "" {
 		return 0
 	}
