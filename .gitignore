@@ -13,3 +13,4 @@ tmp/
 
 .ccls-cache
 zig-cache
+*.a
